@@ -23,11 +23,11 @@ def scanLine4e(f, l, loc):
 # 1.b
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 mid = gray.shape[0] // 2
-s = scanLine4e(gray, mid, "row")
-assert s is not None
+scan = scanLine4e(gray, mid, "row")
+assert scan is not None
 
 plt.figure()
-plt.plot(s)
+plt.plot(scan)
 plt.title("Scan Line Plot")
 plt.xlabel("Pixel Index")
 plt.ylabel("Intensity")
@@ -64,3 +64,11 @@ print(
     f"Mask 1-valued elements: {count}, expected: {expected} which is",
     "correct" if count == expected else "incorrect",
 )
+
+# 2.d
+result = img_gray * mask
+
+plt.figure()
+plt.imshow(result, cmap="gray", vmin=0, vmax=255)
+plt.axis("off")
+plt.show()
