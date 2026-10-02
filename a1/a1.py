@@ -44,3 +44,5 @@ result = cursorValues4e(f_read)
 if result is not None:
     r, c, v = result
     print(f"Center of right pupil: (r={r}, c={c}), value={v}")
+
+# Center of right pupil: (r=53, c=334), value=221
