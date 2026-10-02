@@ -35,6 +35,7 @@ def cursorValues4e(f):
     c = round(x)
     v = pixVal4e(f, r, c)
 
+    print(f"Row: {r}, Col: {c}, Value: {v}")
     return r, c, v
 
 
