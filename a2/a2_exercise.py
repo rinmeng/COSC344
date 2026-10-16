@@ -2,7 +2,6 @@ import os
 
 import cv2
 import matplotlib.pyplot as plt
-from cv2.mat_wrapper import cv
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
